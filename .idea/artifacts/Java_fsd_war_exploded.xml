@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Java-fsd:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Java_fsd_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Java-fsd" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="Java-fsd/web/Web" />
+      <element id="javaee-facet-resources" facet="Java-fsd/web/Web2" />
+      <element id="javaee-facet-resources" facet="Java-fsd/web/Web3" />
+      <element id="javaee-facet-resources" facet="Java-fsd/web/Web4" />
+      <element id="javaee-facet-resources" facet="Java-fsd/web/Web5" />
+      <element id="javaee-facet-resources" facet="Java-fsd/web/Web6" />
+      <element id="javaee-facet-resources" facet="Java-fsd/web/Web7" />
+      <element id="javaee-facet-resources" facet="Java-fsd/web/Web8" />
+      <element id="javaee-facet-resources" facet="Java-fsd/web/Web9" />
+      <element id="javaee-facet-resources" facet="Java-fsd/web/Web10" />
+    </root>
+  </artifact>
+</component>
