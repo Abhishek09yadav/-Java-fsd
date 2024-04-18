@@ -2,3 +2,4 @@
 *
 # But not .zip files
 !*.zip
+!*/
