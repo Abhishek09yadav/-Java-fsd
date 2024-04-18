@@ -3,3 +3,4 @@
 # But not .zip files
 !*.zip
 !*/
+*.xml
