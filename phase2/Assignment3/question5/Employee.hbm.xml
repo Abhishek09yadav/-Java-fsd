@@ -1,0 +1,31 @@
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="Employee" table="EMPLOYEE">
+        <id name="id" column="ID">
+            <generator class="native"/>
+        </id>
+        <property name="name" column="NAME"/>
+        <list name="phoneNumbers" table="PHONE_NUMBERS">
+            <key column="EMPLOYEE_ID"/>
+            <list-index column="PHONE_INDEX"/>
+            <one-to-many class="PhoneNumber"/>
+        </list>
+        <set name="skills" table="SKILLS">
+            <key column="EMPLOYEE_ID"/>
+            <element column="SKILL" type="string"/>
+        </set>
+        <map name="certifications" table="CERTIFICATIONS">
+            <key column="EMPLOYEE_ID"/>
+            <map-key column="CERT_NAME" type="string"/>
+            <element column="CERT_DETAILS" type="string"/>
+        </map>
+    </class>
+
+    <class name="PhoneNumber" table="PHONE_NUMBER">
+        <id name="id" column="ID">
+            <generator class="native"/>
+        </id>
+        <property name="number" column="NUMBER"/>
+    </class>
+</hibernate-mapping>
